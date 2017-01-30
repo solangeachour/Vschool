@@ -1,0 +1,17 @@
+document.getElementById("btn").clik (function){
+    
+var school = function(callback,room){
+    this.room = room;
+    console.log("Give all numbers of rooms");
+    
+}
+var product = function(callback){
+   var setinterval = function(){ 
+    console.log("what is the product in stored");
+    
+}
+}
+     callback();
+    callback(number);
+    var student = new school();
+    student.school(callback(rm));

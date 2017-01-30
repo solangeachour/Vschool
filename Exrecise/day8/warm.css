@@ -1,0 +1,44 @@
+
+body{
+    padding:0;
+margin:0;
+}
+.Home a hover {
+ text-decoration: underline;
+/*    padding:10px;*/
+
+    }
+    .Home  {
+    width: 90%;
+    background-color:black;
+    height:50px;
+    border: 3px solid white; 
+    padding-top: 8px;
+    text-align: center;
+
+}
+
+.nav {
+    width: 100%;
+    background-color: white;
+    height:250px;
+    border: 3px solid white; 
+    padding: 90px ;
+    padding-left:10px;
+    padding:10px;
+}
+
+.Copy {
+    position:absolute;
+    width: 90%;
+    background-color:Black;
+    height:50px;
+    border: 3px solid white; 
+    padding-bottom:8px ;
+     text-align: center;
+}
+
+
+
+
+

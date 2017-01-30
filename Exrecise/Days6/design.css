@@ -1,0 +1,21 @@
+var Personality {
+ FirstName:"Naji" ,
+ LastName:"Lebanon",
+ Age:24 ,
+ adress:"beirut",
+ status: [ "Single","Marrid"],
+booleanFun : function() 
+		{
+		console.log("FirstName:+ Firstname");
+		} 
+}
+ var booleanFun = function(S,M){
+     var status = new [2];
+     for (i =0 ; i< status.length;i++){
+    if ( s[i] == Single){
+        return true;
+    } 
+     else return false;
+}
+}
+

@@ -1,0 +1,44 @@
+.add {
+   
+    width: 100%;
+    background-color: azure;
+    border: 3px solid grew; 
+    padding-top: 10px ;
+    padding-bottom:10px;
+    text-align: center;
+    font-style:italic;
+}
+.min {
+   
+    width: 100%;
+    background-color: aqua;
+    border: 3px solid grew; 
+    padding-top: 10px ;
+    padding-bottom:10px;
+    text-align: center;
+}
+
+.division {
+   
+    width: 100%;
+    background-color: antiquewhite;
+    border: 3px solid grew; 
+    padding-top: 10px ;
+    padding-bottom:10px;
+     text-align: center;
+}
+.result {
+    border-color: 1px solid white; 
+         text-align: center;
+
+}
+.result1 {
+    border-color: 1px solid white; 
+         text-align: center;
+
+}
+.result2 {
+        border-color: 1px solid white; 
+         text-align: center;
+
+}

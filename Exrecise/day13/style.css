@@ -1,0 +1,30 @@
+a {
+    color:red;
+}
+.yellow {
+    background-color: yellow;
+    padding-bottom: 10px;
+    height: 60px;
+}
+.red {
+    
+  background-color: red;
+    height: 200px;
+    padding-bottom: 10px;
+    
+}
+imgB {
+    text-align:center;
+}
+p {
+    color: red;
+}
+imgA {
+
+    float:right;
+}
+h3 {
+    text-align: center;
+    color: red;
+}
+//font-family: 'Nunito Sans', sans-serif;

@@ -1,0 +1,4 @@
+var colors =["black","green"];
+function randNumber(min, max){
+
+}

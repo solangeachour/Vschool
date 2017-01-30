@@ -1,0 +1,19 @@
+
+img {
+    
+    height: 70px;
+    width: 50px;
+}
+h1  {
+    text-align: center;
+    background-color: pink;
+    font-size: 60px;
+    Border-color:black;
+}    
+ p{ 
+/*     margin: 30px;*/
+     padding:20px;
+     width: 30%;
+     display: inline-block;
+/*     vertical-align: top;*/
+  }

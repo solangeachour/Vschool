@@ -1,0 +1,22 @@
+.red{
+    background: red;
+    height: 50px;
+  
+}
+.blue{
+    background: blue;
+    height: 25px;
+}
+.brown{
+    background: brown;
+    height: 500px;
+}
+div{
+  border: 1px solid black;
+}
+p{
+    border : 0.5px solid yellow;
+    margin: 35px;
+    font-family :monospace;
+    font-size: 48px;
+}

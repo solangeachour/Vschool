@@ -1,0 +1,17 @@
+.table {
+    border-spacing: 2;  
+    text-align: center;
+}
+td , th  {
+   
+/*    background-color: aqua;*/
+    border: 3px solid black;
+    text-align: center;
+}
+tr:nth-child(odd) {
+    
+    background-color:red;
+      color:blue;
+    
+}
+

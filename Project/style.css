@@ -1,0 +1,111 @@
+
+body {
+    background: picture("big%20background.jpg") fixed;
+    background-size: cover;
+}
+
+ table{
+    font-size: 35px;
+    color: black;
+    text-align: center;
+    width: 100%;
+}
+.box {
+    text-align: right;
+    font-size: 60px;
+    
+    width: 100%;
+    background-color: antiquewhite;
+    border: 3px solid graw; 
+    padding-top: 10px ;
+    padding-bottom:10px;
+}
+h1 { font-style:italic;
+     color:white;
+    text-align: right;
+     font-size: 40px;
+}
+p {
+     font-size:130px;
+      color:red;
+     text-align:center;
+     font-Style:bold;
+
+}
+
+
+
+
+.cap { 
+text-align:right;
+text-decoration:underline;
+}
+.firstImg {
+border: 4px solid black;
+width: 32%;
+
+margin-left: auto;
+margin-right: auto;
+ margin-top:70px;
+display: inline-block;
+ text-align: center;
+ vertical-align: top;
+
+}
+
+.secondImg {
+    border: 4px solid black;
+    width: 33%;  
+    margin-left: auto;
+    margin-right: auto;
+    margin-top:70px;
+    display: inline-block;
+    text-align: center;
+     vertical-align: top;
+}
+.thirdImg {
+   border: 4px solid red;
+    width: 32%;
+  vertical-align: top;
+   margin-left: auto;
+   margin-right: auto;
+   margin-top:70px;
+   display: inline-block;
+   text-align: center;
+}
+
+td , th  {
+   
+  /* background-color: aqua;*/
+    border: 3px solid black;
+    text-align: center;
+   font-familly:monotype;
+font-size: 40px;
+}
+tr:nth-child(odd) {
+    
+background-color: pink;
+  font-color: red;
+      color:red;
+      
+}
+a {
+ color:yellow;
+  text-decoration:underline;
+ font-size:50px;
+font-style: bold;
+}
+
+@media(max-width:600px) {
+   .box { 
+
+     width:100%;
+  background-color:chocolate;
+}
+
+@media(min-width:600px) {
+   .box { 
+
+     width:100%;
+  background-color:red;
+}

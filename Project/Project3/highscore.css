@@ -1,0 +1,13 @@
+body {
+    
+    background: url("images%20(4).jpg") fixed;
+
+}
+h1 {
+    color : brown;
+    font-size:50px;
+}
+#name {
+    border:3px;
+    border-color:blueviolet;
+}

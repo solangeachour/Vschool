@@ -1,0 +1,64 @@
+<!doctype html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+        <link rel="stylesheet" type="text/css" href="highscore.css">
+    
+    </head>
+    <body>
+        <div class="container-fluid">
+            <center><h1><b>Score Game</b></h1></center>
+            <form>
+                <div class="form-group">
+                    <label><i> Enter your Name</i></label>
+                    <input id="name" type="text" style="width: 350px; padding: 2px; border: solid 2px aqua" placeholder="Full Name" class="form-control" required>
+                </div>
+                <div class="form-group">
+                    <label><i>Game</i></label>
+                    <input id="game" type="text" style="width: 350px; padding: 2px; border: solid 2px aqua" placeholder="Game" class="form-control" required>
+                </div>
+                <div class="form-group">
+                    <label><i>Date</i></label>
+                    <input id="date" type="date" value="" style="width: 350px; padding: 2px; border: solid 2px aqua" placeholder="Date" class="form-control" required>
+                </div>
+                <div class="form-group">
+                    <label><i>Enter High score</i></label>
+                    <input id="score" type="number" style="width: 350px; padding: 2px; border: solid 2px aqua" placeholder="High score" class="form-control" min=0 required>
+                </div>
+                <div class="form-check">
+                    <label>
+                        <input id="trash" value="MEEN KHALAS" type="checkbox" class="form-check-input">
+                        <i><b>With Trash Talk </b></i>
+                    </label>
+                </div>
+            </form>
+            <center> <button id="btn" value="Submit" class="btn btn-primary">Submit</button>
+        
+            
+            <button id="sort" value="Sort" class="btn btn-danger">Sort</button>
+        </center>
+           <br/>
+            <table id="personnel" class="table">
+                <thead class="thead-inverse">
+                    <tr>
+                    <th><u> Full Name</u></th>
+                        <th><u>Game</u></th>
+                        <th><u>Date</u></th>
+                        <th><u>High score</u></th>
+                        <th><u>Trash Talk</u></th>
+                    </tr>
+                </thead>
+                <tbody class="output">
+                </tbody>
+            </table>
+           <center> <button id="reset" value="reset" class="btn btn-success">Reset</button></center>  
+        </div>
+       <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+            <script src='js.js'></script>
+        <script src="highscore.js"></script>
+    </body>
+</html>
+
+
+<!-- background: skyblue;-->

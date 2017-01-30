@@ -1,0 +1,29 @@
+.red{
+    background: red;
+    height: 180px;
+    margin-bottom: 20px;
+    
+  
+}
+.blue{
+    background: blue;
+    height: 160px;
+    margin-bottom: 20px;
+}
+.green{
+    background: green;
+    height: 120px;
+    margin-bottom: 20px;
+}
+
+.brown{
+    background: brown;
+    height: 120px;
+    margin-bottom: 20px;
+}
+.pink{
+    background: pink;
+    height: 200px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}

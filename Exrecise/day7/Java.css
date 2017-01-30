@@ -1,0 +1,16 @@
+var A ="Naji" ,
+var B = 27 ,
+varC = true ,
+var x = function (A , B , C){
+    return ( "A.contact(B)");
+}
+var Y [ {
+    var A ="Naji" ,
+    var B = 27 ,
+}
+]
+ var array =[2, 5,6,7];
+var Table = function ( ){
+    var Table = Table.splice(2,4);
+    console.log(Table);
+}
