@@ -1,0 +1,12 @@
+<div> {{message}}</div>
+<div ng-if=""></div>
+
+
+<div ng-repeat="item in menuItems   track by $index">
+ <p>{{item.name}}</p>
+ <p>{{item.cost}</p>
+ <p>{{item.isDone}}</p>
+ <input ng-model="name">
+ <button ng-click="delete(item._id)" class="glyphicon glyphicon-thumbs-up btn btn-info">
+                <!--                    <img src="images.jpg"> -->
+                Edit</button>

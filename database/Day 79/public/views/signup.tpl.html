@@ -1,0 +1,7 @@
+<div>
+    <input ng-model="userinput.username" placeholder="username" type="text">
+    <input ng-model="userinput.password" placeholder="password" type="password">
+    <input ng-model="userinput.password2 " placeholder="password" type="password">
+</div>
+<!--<"userinput.password != userinput.password">-->
+<button ng-click="signup()" ng-disabled= "!userinput.username || !userinput.password|| !userinput.password2 || userinput.password != userinput.password2">signup</button>

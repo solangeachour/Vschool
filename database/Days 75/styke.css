@@ -1,0 +1,107 @@
+/*
+* {
+    box-sizing:border-box;
+}
+*/
+body {
+    background-color:darkblue;
+}
+.nav {
+    background-color:darkblue;
+}
+
+h1 {
+    color:white;
+}
+.darkturquoise{
+    background-color: darkturquoise;
+    height: 80px;
+/*    margin-bottom: 20px;*/
+    width:100%;
+}
+img{
+    margin-top:14px;
+   margin-left: 90px;
+   margin-right: 90px;
+   height: 40px;
+   width:40px;
+    
+} 
+      
+}
+
+.blue{
+    background-color: blue;
+
+    height: 80px;
+/*    margin-bottom: 20px;*/
+     width:60%;
+
+}
+.imgm {
+    margin-top:14px;
+   margin-left: 90px;
+   margin-right: 90px;
+   height: 40px;
+   width:40px; 
+}
+h4 {
+    text-align:center;
+}
+
+.yellow{
+    background-color: yellow;
+      height: 50px;
+      width:100%;
+}
+
+.orange {
+    background-color: orange;
+
+    height: 50px;
+    margin-bottom: 20px;
+     width:100%;
+
+}
+.orange {
+    background-color: orange;
+
+    height: 80px;
+    margin-left:2px;
+/*    margin-bottom: 20px;*/
+     width:80%;
+}
+.green {
+    background-color: green;
+     height: 80px;
+      width:60%;
+}
+
+.green1 {
+    background-color: green;
+     height: 80px;
+      width:70%;
+}
+
+.blueviolet{
+    background-color: blueviolet;
+     height: 80px;
+      width:60%;
+}
+.violet{
+    background-color: violet;
+     height: 80px;
+      width:100%;
+}
+
+    height: 50px;
+/*    margin-bottom: 20px;*/
+     width:100%;
+}
+.colozzr {
+    background: darkblue;
+}
+a {
+    color:white;
+    font-size:20px;
+}

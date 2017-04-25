@@ -1,0 +1,66 @@
+<div ng-controller="homeCtrl" ng-init="getData()">
+
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4">
+
+                <div ng-repeat=" item in todoItems track by $index">
+                    <div ng-if="!item.isEdit">
+                        <P> {{ item.name}}</P>
+                        <P>{{ item.cost | currency}} </P>
+                        <P>{{ item.isDone}} </P>
+
+
+
+                        <div class="col-md-4">
+                            <button ng-click="toggleEdit($index)" class="glyphicon glyphicon-pencil btn btn-info"> Edit </button>
+                            <br>
+                            <br>
+                        </div>
+                        <div class="col-md-4">
+                            <button ng-click="remove(item._id)" class="glyphicon glyphicon-trash btn btn-success"> Remove</button>
+                        </div>
+                    </div>
+
+
+
+
+                    <div ng-if="item.isEdit">
+                        <input ng-model="item.name">
+                        <input ng-model="item.cost">
+                        <button ng-click="save(item._id, item)" class="glyphicon glyphicon-save btn btn-info"> Save </button>
+                    </div>
+                </div>
+            </div>
+
+
+            <form class="navbar-form navbar-right" role="search">
+                <div class="form-group">
+                    <input ng-model="userInput.name" class="form-control" name="name" place holder="name">
+                </div>
+                <div class="form-group">
+                    <input ng-model="userInput.cost" class="form-control" name="Cost" place holder="Cost">
+                    <button ng-click="addItem()"> Add</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+
+
+<!--
+    <div class="col-md-4">
+    <div>
+-->
+
+
+<!--
+                        <input type="text" class="form-control" name="name" placeholder="name">
+                    </div>
+                    <div class="form-group">
+                        <input type="text" class="form-control" name="Cost" placeholder="cost">
+                    </div>
+                    <button type="submit" class="btn btn-default">Sign In</button>
+                </form>
+-->

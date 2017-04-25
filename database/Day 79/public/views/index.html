@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Sofia" rel="stylesheet">
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+
+<body ng-app="myApp">
+
+
+
+    <nav class="navbar navbar-default">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-12">
+                    <!--                    <div class="header">-->
+                    <div class="row">
+                        <div class="col-md-2">
+                            <a href="#/home">Home</a>
+                            <a href="#/signup">signup</a>
+                            <a href="#/signin">signin</a>
+                        </div>
+                        <div class="col-md-10">
+
+
+                            <h1> Your Todo List</h1>
+                        </div>
+                    </div>
+                    <br>
+
+                    <div class="col-md-1 pull-left">
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        </div>
+
+    </nav>
+
+    <ng-view></ng-view>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.6.2/angular.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.6.2/angular-route.min.js"></script>
+    <script src="../js/services/home.js"></script>
+    <script src="../js/services/app.js"></script>
+    <script src="../js/services/request.js"></script>
+     <script src="../js/services/signup.js"></script>
+    <script src="../js/services/signin.js"></script>
+   
+    <script src="../js/services/auth.js"></script>
+</body>
+
+</html>
