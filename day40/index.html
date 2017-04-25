@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>JS Bin</title>
+    <link rel="stylesheet" href="style.css" type="text/css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+</head>
+
+<body>
+    <nav class="navbar navbar-default">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="header">
+                        <img src="download.png">
+                        <h1> Don corleone's Hit List</h1>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <div ng-app="App">
+        <div class="container" class="on" ng-controller="mainCtrl" ng-init="loadData()">
+            <div class="row">
+                <div class="col-md-4" ng-repeat=" item in items track by $index">
+                      
+                <img ng-src={{item.image}}/>
+
+              <p> {{item.name}}</p>
+            </div>
+        </div>
+    </div>
+ </div>
+
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.6.1/angular.min.js"></script>
+    <script src="index.js"></script>
+</body>
+
+</html>

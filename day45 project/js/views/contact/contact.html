@@ -1,0 +1,89 @@
+
+  
+
+  <div ng-controller="contactCtrl" ng-init="loadDate()">
+   <br><br>
+       <marquee behavior="alternate"><h1>{{ message }}</h1></marquee>
+       <div class ="ct"><img src="download.png"></div>
+    <br><br><br>
+    <div class="container">
+
+<div id="x" class="row text-center">
+          <div class="col-md-6">
+              FullName:<input ng-model="fullname">
+          </div>
+            <div class="col-md-6">
+              Number IBM:<input ng-model="IBM">
+          </div>
+</div>
+<div id="x" class="row text-center">
+           <div class="col-md-4">
+              Sale A:<input type="checkbox"name="A">Price:100$
+          </div>
+<div class="col-md-4">
+              Sale B:<input type="checkbox"name="B">Price:50$
+          </div>
+<div class="col-md-4">
+              Sale C:<input type="checkbox" name="C">Price:20$
+          </div>
+</div>
+
+<div id="x" class="row text-center">
+All Days Sauf saturday and sunday
+          <div class="col-md-6">
+              Hours3-5:<input ng-model="AM">
+          </div>
+            <div class="col-md-6">
+             Hours 7-9:<input ng-model="PM">
+          </div>
+</div>
+<div id="x" class="row text-center">
+Days saturday and sunday 
+          <div class="col-md-6">
+              <input type="radio"name="hour" checked>Hours5-8:
+<!--              <input ng-model="AM">-->
+          </div>
+            <div class="col-md-6">
+            <input type="radio"name="hour">  Hours 9-10:
+             
+<!--             <input ng-model="PM">-->
+          </div>
+ <div class="col-md-6">
+Sales :<input type="checkbox"name="sale">Price:110$
+          </div>
+</div>
+<div id="x" class="row">
+          <div class="col-md-12">
+              Films <select name="film" size=1 Multiple>
+   <option value="item.title" selected>
+</select>
+          </div>
+       </div>
+       <div id="x" class="row">
+          <div class="col-md-12">
+              <h1>Salary ticket from $ to any Currency</h1>
+          </div>
+       </div>
+       <div id="x" class="row">
+           <div class="col-md-6 col-md-offset-3">
+               <div class="row">
+                   <div class="col-md-6">
+                       <h3>Enter your $ amount</h3>
+                       <input class="form-control" value="USD" disabled>
+                       <br>
+                       <input type="number" ng-model="yourCurr" placeholder="Amount" class="form-control"><br>
+                       <button ng-click="convert(selectedCurr)" class="btn btn-info btn-sm">Convert</button>
+                   </div>
+                   <div class="col-md-6">
+                       <h3>Choose Currency</h3>
+                       <select ng-model="selectedCurr" ng-options="x for (x,y) in list.rates" class="form-control">
+                       </select><br>
+                       <input type="number" ng-model="convertedCurr" ng-init="convertedCurr" placeholder="Converted Amount" 
+                      class="form-control" disabled>
+                   </div>
+               </div>
+           </div>
+       </div>
+   </div>
+
+</div>

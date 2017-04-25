@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Document</title>
+</head>
+
+<body ng-app="myApp" ng-controller="controller">
+    <select ng-model="name" ng-options="nameItem for nameItem in ShopDropDown">
+    </select>
+    <input ng-model="amount" type="number" placeholder="Amount Of sell">
+    <input ng-model="price" type="number" placeholder="Price Of Item"> {{name}} {{amount}} {{price}}
+    <button ng-click="addshoppItem()">Add</button>
+    <div ng-repeat="item in shopItems">
+        <item-in-shopp name="item.name" amount="item.amount" price="item.price" currency="$"></item-in-shopp>
+    </div>
+    <script src="https://code.angularjs.org/1.6.2/angular.min.js"></script>
+    <script src="drop.js"></script>
+    <script src="directives.js"></script>
+</body>
+
+</html>

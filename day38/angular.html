@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+  <div ng-app="App">
+      <div ng-controller="ctrl" >
+          <input ng-model="newName">
+         <button  ng-click="AddItem()">Add</button><br/>
+          <div ng-repeat=" item in informations"></div>
+          {{item}}
+      </div>
+  </div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.6.1/angular.min.js"></script>  
+  <script src="angular.js"></script>
+</body>
+</html>

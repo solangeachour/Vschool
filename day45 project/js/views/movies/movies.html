@@ -1,0 +1,23 @@
+<div class="container">
+    <div class="row text-center">
+        <div class="col-md-12">
+            <h1 ng-init="getmove()">All movies</h1>
+        </div>
+    </div>
+    <div class="row text-center">
+        <div class="col-md-4" ng-repeat="item in items track by $index">
+           <a href="{{item.url}}" target="_blank"><img ng-src="{{item.medium_cover_image}}"></a>
+            <a ng-href="#/story/{{item.id}}"><p>{{item.title}}</p></a>
+            <p>{{item.year}}</p>
+            <p ng-show="showStory[$index]">{{item.synopsis}}</p>
+            <span ng-repeat=" x in item.genres ">{{x}} </span>
+        </div>
+    </div>
+</div>
+
+<!--
+    <input ng-model="out">
+    <button ng-click="getmov()">Search</button>
+    
+    <p> Actors: {{actor}}</p>
+-->

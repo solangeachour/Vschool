@@ -1,0 +1,95 @@
+body{
+/*    background-color: antiquewhite;*/
+    background-image: url(../images/o-VIOLENCE-AGAINST-WOMEN-.jpg);
+    font-family: 'Sofia';font-size: 22px;
+    
+   background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+#comment {
+    background-image: url(../images/o-VIOLENCE-AGAINST-WOMEN-.jpg);
+       background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    text-align: center
+}
+.comment {
+    background-color:rgba(248, 248, 248, 0.48);
+    text-align: center
+}
+#qwer {
+    text-align: center;
+/*     width: 50%;*/
+}
+h1 {
+    text-align:center;
+     font-family: 'Sofia', cursive;
+    font-size: 45px;
+    font-style:bold;
+    
+}
+h5 {
+    text-align:center;
+     font-family: 'Sofia', cursive;
+    font-size: 25px;
+    font-style:italic;
+    color:red;
+}
+.imge {
+    float: left;
+    height:10%;
+    width:10%;
+}
+.header {
+    display:flex;
+   background-color:gray;
+    
+}
+#ig {
+/*
+    height:10%;
+    width:10%;
+*/
+}
+h5 {
+    font-style:bold;
+}
+.btn:hover {
+    color:blue;
+}
+#repeat {
+/*    background-color:rgba(248, 248, 248, 0.48);*/
+}
+#dow {
+/*    background-image: url("../images/o-VIOLENCE-AGAINST-WOMEN-.jpg");*/
+ 
+}
+.com {
+    color:white;
+}
+.box {
+    text-align: right;
+    font-size: 30px;
+     width: 50%;
+    padding-top: 50px ;
+    padding-bottom:10px;
+}
+/*
+.myDiv {
+   
+    text-align: center
+}*/
+@media(max-width:600px) {
+   .box { 
+
+     width:50%;
+  background-color:chocolate;
+        background-color:red;
+}
+
+@media(min-width:600px) {
+   
+    img {
+        height: 80%;
+    }

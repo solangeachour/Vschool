@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Document</title>
+</head>
+
+<body ng-app="myApp" ng-controller="controller">
+   
+    <input ng-model="searchTerm">
+   <p>{{searchTerm | uppercase}}</p>
+    <ul ng-repeat="item in data | search :searchTerm">
+   <li>{{item.name}}</li>
+   
+    </ul>
+    <script src="https://code.angularjs.org/1.6.2/angular.min.js"></script>
+    <script src="temp.js"></script>
+</body>
+
+</html>

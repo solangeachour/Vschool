@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>JS Bin</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+</head>
+
+<body ng-app="App">
+    <div class="container" ng-controller="mainCtrl">
+        <div class="row">
+            <div class="col-md-6">
+                <input ng-model="firstname" placeholder="First Name" class="form-control">
+                <input ng-model="email" placeholder="Email" class="form-control">
+                <input ng-model="phone" placeholder="Phone" class="form-control">
+
+            </div>
+            <div class="col-md-6">
+                <input ng-model="lasttname" placeholder="Last Name" class="form-control">
+
+                <input ng-model="placeofbirth" placeholder="Place Of Birth" class="form-control">
+            </div>
+            <div class="col-md-6">
+                <input ng-model="favoritefood" placeholder="Favorite Food" class="form-control">
+            </div>
+
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-12">
+            <textarea cols="140" rows="20"></textarea>
+        </div>
+    </div>
+    <center>
+        <button ng-click="addNAme()">Submit</button>
+    </center>
+    <div>
+    <ul ng- repeat="x in name track by $index">
+        <li ng-click="remove($index)">
+            </center>
+            {{x}} {{index}}
+        </li>
+    </ul>
+</div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.6.1/angular.min.js"></script>
+    <script src="information.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,28 @@
+<!docotype html>
+<html>
+<head>
+</head>
+<title></title>
+<body ng-app="App">
+<h1>Calculator </h1>
+<div ng-controller="mainCtrl">
+<input ng-model="a" type ="number">
+<input ng-model="b" type = "number">
+
+<button ng-click="addBtn()">add</button>
+<ul>
+    <p>{{addition}}</p>
+</ul>
+</div>
+ <div ng-controller="multipleCtrl">
+<input ng-model="r" type ="number">
+<input ng-model="t" type = "number">
+<button ng-click="multBtn()">mult</button>
+<ul>
+    <p>{{multiplication}}</p>
+</ul>
+</div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.6.1/angular.min.js"></script>
+   <script src="calculate.js"></script>
+    </body>
+</html>

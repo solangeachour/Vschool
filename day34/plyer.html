@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>player</title>
+</head>
+<body>
+ player in player
+  <div ng-app="MyPlayerApp">
+      <div ng-controller="mainController" >
+         <div ng-repeat ="player in player">
+           <div ng-repeat ="kill in player.kills">
+           <p> {{kill.handle}}</p>
+              <p> {{kill.rank}}</p>
+              <li ng-repeat="clan in kill.clan">
+               {{clan}}
+               </li>
+             </div>
+
+   </div>
+    </div>
+</div>
+    <script src="https://code.angularjs.org/1.6.1/angular.min.js" ></script>
+    <script src="player.js" ></script>
+</body>
+</html>
+
+
+
+

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body ng-app="MyApp">
+<div ng-controller="mainCtrl">
+   <h1>Convert Of Temperature  </h1>
+    <input ng-model="temperature" >
+    <button ng-click="addItem()">Add</button>
+    <ul>
+        <li ng-repeat=" temp in temperature">
+        <p>{{temp| temperature:"F"}}</p
+    
+   </li>
+   </ul>
+</div>
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.6.1/angular.min.js"></script>
+   <script src="app.js"></script>   
+</body>
+</html>

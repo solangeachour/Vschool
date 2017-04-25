@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Document</title>
+</head>
+
+
+
+
+
+<body ng-app="MyApp">
+<div ng-controller="mainCtrl">
+   <h1>This is a Pokemon</h1>
+    <input ng-model="output" type="number">
+    <button ng-click="getpokemon()">Get Pokemon</button>
+    <p>{{name}}</p>
+    </div>
+    <script src="https://code.angularjs.org/1.6.2/angular.min.js"></script>
+    
+    <script src="./js/app.js"></script>
+<!--    <script src="directives/shop/directive.js"></script>-->
+</body>
+
+</html>
+
+
+
+
+
+
+
+
+
+
+<!--
+<body ng-app="myApp" ng-controller="controller"ng-init="getdata()">
+   <div class="container">
+       <div class="row"><div class="col-md-3">
+    <input ng-model="name" type="text" placeholder="Name">
+    <buttonng-click="PostD(data)">Post</button>
+           </div>
+       <div class="row" ng-repeat="item in menuItems">
+       <div class="col-md-3">
+       
+    <input ng-model="Cost" type="number" placeholder="Cost"> 
+   <input ng-model="type" type="text" placeholder="Type"> 
+    {{name}}
+    {{Cost}}
+    {{type}}
+    
+     <div class="row"><div class="col-md-6">
+<button ng-click="remove(item_id)">Delete</button>
+         </div>
+         
+         <div class="col-md-6">
+     
+    <item-in-shopp name="item.name" Cost="item.Cost" type="item.type"></item-in-shopp>
+    </div>
+<button ng-click="remove(item_id)">Update</button-->

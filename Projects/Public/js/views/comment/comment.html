@@ -1,0 +1,82 @@
+<!--
+ <div class="row" ng-repeat="menu in menuItems track by $index">
+
+
+            <div id="ig" class="col-md-6">
+                <img src="/images/images5.jpg">
+                 <img src="/images/images3.jpg">
+                 <img src="/images/elsadavilonceagainstwoman.jpg">
+            </div>
+
+            <div class="col-md-4">
+                <h3>{{menu.title}}</h3>
+                <p>{{menu.description}}</p>
+            </div>
+            <div class="col-md-6">
+
+
+                <button ng-click="upp(menu._id,menu.likes)" class="glyphicon glyphicon-thumbs-up btn btn-info">
+                    <!--                    <img src="images.jpg"> -->
+<!--                    {{menu.likes}}</button>-->
+<!--                    <input type="image" ng-click="upp(menu._id,menu.likes)" id="myimage" style="height:200px;w idth:200px;" src="/Public/images.jpg" /> {{menu.likes}}-->
+<!--
+                <button ng-click="down(menu._id,menu.disLike)" class="glyphicon glyphicon-thumbs-down btn btn-info">
+                    <!--                    <img src="imag.png"> -->
+<!--
+                    {{menu.disLike}}</button>
+                <button class="btn" ng-click="show(menu)">show comments</button>
+                <h5>{{menu.comments.length}}</h5>
+
+            </div>
+
+            <div class="col-md-2" ng-if="menu.show">
+                <button ng-click="addComment(menu._id,text)" class="glyphicon glyphicon-enveloppe btn btn-success">Post Comment</button>
+
+                <textarea ng-model="text" placeholder="Comments"></textarea>
+                <div ng-repeat="comment in menu.comments track by $index">
+                    <div>{{comment}}</div>
+                </div>
+            </div>
+
+
+        </div>
+
+  -->
+
+<div ng-init="loadData()" id="comment">
+    <div class="comment">
+        <div id="qwer" class="row">
+            <div class="col-md-12">
+                <h1>{{menu.title}}</h1></div>
+        </div>
+        <div id="qwer" class="row">
+            <div class="col-md-12">
+                <p>{{menu.description}}</p>
+            </div>
+        </div>
+       
+        <div id="qwer" class="row">
+            <div class="col-md-12">
+                <textarea ng-model="text" placeholder="Comments"></textarea>
+            </div>
+        </div>
+        <div id="qwer" class="row">
+            <div class="col-md-12">
+                <button ng-click="addComment(menu._id,text)" class="glyphicon glyphicon-enveloppe btn btn-success">Post Comment</button>
+          
+            <div><button ng-click="deleteMenu(menu._id)" class="glyphicon glyphicon-trash btn btn-info"></button>
+     
+                
+        
+        </div>
+        <div id="qwer" class="row">
+            <div class="col-md-12">
+                <div ng-repeat="comment in menu.comments track by $index">
+                    <div>{{comment}}</div>
+                    <hr>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

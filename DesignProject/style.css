@@ -80,7 +80,8 @@ td , th  {
   /* background-color: aqua;*/
     border: 3px solid black;
     text-align: center;
-    font-familly:monotype;
+    font-family: 
+    font-family:monotype;
     font-size: 40px;
 }
   tr:nth-child(odd) {

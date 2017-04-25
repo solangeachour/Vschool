@@ -1,0 +1,81 @@
+<div class="container" id="dow" ng-init="loadData()">
+    <div class="row">
+        <div class="col-md-12">
+            <!--              <img src="../images/download%201.jpg">-->
+        </div>
+    </div>
+    <div class="row">
+<!--
+        <div class="col-md-4">
+            <input ng-model="title" placeholder="Name">
+        </div>
+        <div class="col-md-4 ">
+            <input ng-model="description" placeholder="description">
+
+        </div>
+-->
+<!--
+        <div class="col-md-2 ">
+            <button ng-click="add()" class="glyphicon glyphicon-plus btn btn-success"></button>
+        </div>
+-->
+<!--
+        <div class="col-md-2 ">
+            <button ng-click="deleteMenu(menuItems._id)" class="glyphicon glyphicon-trash btn btn-info"></button>
+        </div>
+-->
+    </div>
+    <div ng-repeat="menu in menuItems | orderBy:'likes':true  track by $index">
+    <div id="repeat" class="row" >
+
+
+        <div id="ig" class="col-md-6">
+           <div class="col-md-2"><img src="/images/download 1.jpg"  width="100" height="100"></div>
+           <div class="col-md-2"><img src="/images/images5.jpg" width="100" height="100"></div>
+           <div class="col-md-2"><img src="/images/imagesB.jpg" width="100" height="100"></div>
+<!--        <p Numbers of likes class="glyphicon glyphicon-circle">{{menu.likes + menu.disLike}}</p>-->
+            
+           
+        </div></div>
+
+           
+             <div class="col-md-6 com">
+             <h5 Numbers of likes class="glyphicon glyphicon-circle">{{menu.likes + menu.disLike}}</h5>
+            <h3>{{menu.title}}</h3>
+            <p>{{menu.description}}</p>
+        </div>
+         
+        <div class="row"> 
+              
+               <div class="col-md-6">
+<!--<p Numbers of likes class="glyphicon glyphicon-circle">{{menu.likes + menu.disLike}}</p>-->
+
+            <button ng-click="upp(menu._id,menu.likes)" class="glyphicon glyphicon-thumbs-up btn btn-info">
+                <!--                    <img src="images.jpg"> -->
+                {{menu.likes}}</button>
+            <!--                    <input type="image" ng-click="upp(menu._id,menu.likes)" id="myimage" style="height:200px;w idth:200px;" src="/Public/images.jpg" /> {{menu.likes}}-->
+
+            <button ng-click="down(menu._id,menu.disLike)" class="glyphicon glyphicon-thumbs-down btn btn-info">
+                <!--                    <img src="imag.png"> -->
+                {{menu.disLike}}</button>
+               
+            <a href="#/comment/{{menu._id}}">
+                <button type="button" class="btn" ng-click="show(menu)">show comments : {{menu.comments.length}}</button>
+            </a>
+            
+<button ng-click="deleteMenu(menu._id)" class="glyphicon glyphicon-trash btn btn-info"></button>
+        </div>
+
+        <div class="col-md-6" ng-if="menu.show">
+            <button ng-click="addComment(menu._id,text)" class="glyphicon glyphicon-enveloppe btn btn-success">Post Comment</button> 
+            <textarea ng-model="text" placeholder="Comments"></textarea>
+            <div ng-repeat="comment in menu.comments track by $index">
+ length
+                <div class="com">{{comment}}</div>
+            </div>
+        </div>
+        </div>
+
+
+    <hr>
+</div></div>

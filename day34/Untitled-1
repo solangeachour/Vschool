@@ -1,0 +1,4 @@
+document.getElementById("submit").addEventListenner("click);
+console.log("clcked");
+var value = document.getElementById("input").;
+document.getElementById("submit").addEventListenner("click);

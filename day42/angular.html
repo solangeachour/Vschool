@@ -1,0 +1,23 @@
+<!docotype html>
+<html>
+<head>
+</head>
+<title></title>
+<body ng-app="Myapp">
+<h1>Angulare More Services </h1>
+<div ng-controller="mainCtrl">
+<input ng-model="imgurl">
+<input ng-model="title">
+<input ng-model="description">
+<button ng-click="addCartoon()">submit</button>
+<ul ng-repeat = " y in items track by $index">
+    
+   <p><img ng-src="{{y.imgurl}}"></p>
+    <p>{{y.title}}</p>
+    <p>{{y.description}}</p>
+</ul>
+</div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.6.1/angular.min.js"></script>
+   <script src="angular.js"></script>
+    </body>
+</html>

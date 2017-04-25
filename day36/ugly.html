@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>JS Bin</title>
+    <link rel="stylesheet" href="ugly.css" type="text/css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+</head>
+
+<body ng-app="App">
+   <h2>how Pictures</h2>
+    <div class="container" class="on" ng-controller="mainCtrl">
+        <div class="row">
+            <div class="col-md-4">
+                <input ng-model="obj.title">
+            </div><br>
+            <div class="col-md-4">
+                <input ng-model="obj.imgurl">
+            </div><br>
+            <div class="col-md-4">
+                <input ng-model="obj.description">
+            </div><br>
+        </div>
+        <center>
+            <button ng-click="submit(obj)">submit</button>
+        </center>
+
+        <div ng-repeat=" item  in items track by $index">
+
+            <div>
+                <h1>{{item.title}}</h1></div>
+            {{item.imgurl}}
+            <div><img ng-src={{item.imgurl}}/></div>
+            <div>
+                <h1>{{item.description}}</h1></div>
+        </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.6.1/angular.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script src="ugly.js"></script>
+</body>
+
+</html>

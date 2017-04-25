@@ -1,0 +1,16 @@
+ 
+
+ <h1 ng-init="getmove()">All movies</h1>
+<div ng-repeat="item in items track by $index">
+
+    <p>Name Movie: {{item.title}}</p>
+    <p>Name Actor: {{item.actor}}</p>
+    <p>Name Actor: {{item.year}}</p>
+</div>
+
+<!--
+    <input ng-model="out">
+    <button ng-click="getmov()">Search</button>
+    
+    <p> Actors: {{actor}}</p>
+-->

@@ -1,0 +1,81 @@
+body {
+    background-color:darkblue;
+}
+.collapse navbar-collapse  {
+    background-color:blue;
+}
+
+.red{
+    background: red;
+    height: 250px;
+    width:100%;
+}
+.blue{
+    background: blue;
+    height:  250px;
+    width:100%;
+}
+.green{
+    background: green;
+     margin-top:10px;
+    height: 60px;
+    width: 100%;
+}
+
+.brown{
+    background: brown;
+    height: 120px;
+       width:100%;
+}
+.yellow {
+    background: yellow;
+    height: 350px;
+    width:100%;
+}
+.white {
+        background: white;
+    height: 60px;
+    width:100%;
+    margin-top:10px;
+}
+.violet {
+     background: violet;
+     margin-top:10px;
+    height: 30px;
+    width:100%;  
+}
+
+.white1 {
+        background: white;
+    height: 240px;
+    width:100%;
+    margin-top:30px;
+}
+
+
+.red2{
+    background: red;
+    height: 70px;
+    width:100%;
+      margin-top:30px;
+}
+.green1 {
+    background: green;
+     margin-top:10px;
+    height: 240px;
+    width: 100%;
+     margin-top:30px;
+    
+}
+.yellow1 {
+    background: yellow;
+    height: 70px;
+    width:80%;
+    margin-top:30px;
+}
+.blue1 {
+    background: blue;
+    height:  70px;
+    width:100%;
+    margin-top:30px;
+}

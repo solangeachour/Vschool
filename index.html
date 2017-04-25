@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html >
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>JS Bin</title>
+<!--    <link rel="stylesheet" href="index.css" type="text/css">-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+</head>
+
+<body ng-app="App">
+<div ng-controller="mainCtrl">
+   <input ng-model="name" type="number">
+    <input ng-model="cost" type="text">
+    <button ng-click="add()">add</button>
+    <div ng-repeat=" item in items trak by $index">
+        <p>{{item.name}}</p>
+        <p>{{item.cost}}</p>
+    </div>
+   
+    </div>
+
+
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.6.1/angular.min.js"></script>
+    <script src="index.js"></script>
+</body>
+
+</html>

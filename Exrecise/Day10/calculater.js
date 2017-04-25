@@ -2,7 +2,7 @@ document.getElementById("btn").addEventListener("click",sum);
 
  function sum(){
     var  number1 = parseInt(document.getElementById("nb1").value);
-          var number2 = parseInt(document.getElementById("nb2").value);
+     var number2 = parseInt(document.getElementById("nb2").value);
      document.getElementById("result").value = number1 + number2;
 //         Number(nb1) + Number(nb2);
  };

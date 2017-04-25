@@ -1,0 +1,35 @@
+* {
+    box-sizing:border-box;
+}
+
+.blue{
+    background: blue;
+    height: 180px;
+    margin-bottom: 20px;
+     width:100%;
+}
+
+
+
+.red{
+    background: red;
+    height: 180px;
+    margin-bottom: 20px;
+    width:50%;
+    
+  
+}
+
+
+.yellow{
+    background: yellow;
+    height: 180px;
+    margin-bottom: 20px;
+     width:100%;
+}
+.green{
+    background: green;
+    height: 180px;
+    margin-bottom: 20px;
+     width:50%;
+}

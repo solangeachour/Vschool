@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body ng-app="MyApp">
+<div ng-controller="mainCtrl">
+   <h1>This is a Pokemon</h1>
+    <input ng-model="output" type="number">
+    <button ng-click="getpokemon()">Get Pokemon</button>
+    <p>{{name}}</p>
+</div>
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.6.1/angular.min.js"></script>
+   <script src="pokemon.js"></script>   
+</body>
+</html>
