@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="/css/style.css"/>
+</head>
+<body ng-app="myApp" ng-controller="menuservice" ng-init="loadData()">
+
+ <div class="container">
+        <div class="row">
+            <div class="col-md-6 col-md-offset-2 title"> 
+            </div>
+        </div>
+ <div class="row">
+            <div class="col-md-6 col-md-offset-2 addrow1">
+                <div ng-repeat="menu in menuItems.data track by $index">
+<!--                    <p ng-model="todoMenu">{{todoMenu.name}}</p>-->
+
+        <P>{{menu.name}} it is Costs {{menu.Cost}} and the Types {{menu.type}}</P> 
+    
+<input ng-model="editmenu">
+                    <button ng-click="edit(menuItems._id,editmenu)" class=" glyphicon glyphicon-scissors btn btn- danger"></button>
+                   
+                </div>
+            </div>
+        </div>
+ <div class="row">
+            <div class="col-md-6 col-md-offset-2 add">
+                <input ng-model="task">
+                <button ng-click="add()" class="glyphicon glyphicon-plus btn btn-danger"></button>
+                 <button ng-click="deleteMenu(menuItems._id)" class="glyphicon glyphicon-trash btn btn-info"></button>
+            </div>
+        </div>
+    </div>
+    
+   
+    <script src="https://code.angularjs.org/1.6.2/angular.min.js"></script>
+    <script src="./Public/js/requests.js"></script>
+    <script src="./Public/js/app.js"></script>
+</body>
+</html>
+
+
+
+
+<!--
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="/css/style.css"/>
+</head>
+<body>
+   <p> this is a project</p> 
+</body>
+</html>-->

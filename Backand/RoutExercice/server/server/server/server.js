@@ -1,0 +1,21 @@
+var express = require("express");
+var bodyParser = require("body-parser");
+var mongoose = require("mongoose");
+var ejs = require("ejs");
+var path = require("path");
+var apiRouter = require.Router("./app.js");
+var fileRouter = require("./files.js");
+mongoose.connect("mongodb://localhost/Restaurant");
+var port = process.env.Port || 8080;
+var app = express();
+app.use(bodyParser.urlencoded({extended:false}));
+app.use(bodyParser.json();
+         app.use(express.static(path.join(__dirname + "\\..\\public")));
+app.set("views",__dirname + "\\..\\public/views");
+app.engine("html",ejs.renderFile);
+app.set("view engine","ejs");
+app.use(fileRouter);
+app.use("/menu",apiRouter);
+app.listen(port,function()console.log("server is running on "+ port);
+    
+});
